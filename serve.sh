@@ -1,0 +1,1 @@
+deno run --allow-read --allow-net 'https://deno.land/std@0.88.0/http/file_server.ts' . --cors -p 8000

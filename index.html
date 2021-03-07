@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charSet="utf-8" />
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' 0.0.0.0:8000"> -->
+  </head>
+  <body>
+    <style>
+      body {
+        counter-reset: line;
+      }
+      .root {
+        white-space: pre;
+        font-family: monospace;
+      }
+      .op {
+        color: red;
+        outline: 1px solid gray;
+      }
+      .note {
+        color: darkgreen
+      }
+      .cursor {
+        border-right: 1px solid gray;
+      }
+      .root > .tao::before, .root > .tao::after {
+        content: "\A"
+      }
+      .selected {
+        background-color: lightskyblue;
+      }
+      .empty {
+        position: relative;
+      }
+      .empty .bracket {
+        font-weight: bold;
+        /* transform: scaleY(0.5); */
+      }
+      .empty .bracket.left::after {
+        /* content: 'ø'; */
+        position: absolute;
+        left: 0.5ex;
+      }
+      .flat .tao {
+        background-color: lightgoldenrodyellow;
+      }
+      .empty > .bracket {
+        transform: scaleY(0.5);
+      }
+      .nested > .bracket {
+        transform: scaleY(1.5);
+        font-weight: bold;
+      }
+      .bracket {
+        display: inline-block;
+      }
+    </style>
+    <script src="main.js"></script>
+  </body>
+</html>
