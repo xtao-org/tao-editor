@@ -1,4 +1,6 @@
-Early work in progress.
+Very early work in progress. Not suitable for human consumption.
+
+Depends on [deno](deno.land/).
 
 Try out on Linux:
 
