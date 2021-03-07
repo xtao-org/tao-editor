@@ -1,6 +1,6 @@
 Very early work in progress. Not suitable for human consumption.
 
-Depends on [deno](deno.land/).
+Depends on [deno](https://deno.land/).
 
 Try out on Linux:
 
